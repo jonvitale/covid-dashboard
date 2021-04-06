@@ -36,14 +36,14 @@
       <Heading size="medium"> Map of Closures by School </Heading>
       <QdtComponent class="w-full" type="QdtViz" :props="map" :load="loadMap" />
     </Square>
-    <!-- <Square ref="v-table" name="Table" class="w-full mb-4" color="tint" tight>
+    <Square ref="v-table" name="Table" class="w-full mb-4" color="tint" tight>
       <QdtComponent
         class="w-full"
         :load="loadTable"
         type="QdtViz"
         :props="table"
       />
-    </Square> -->
+    </Square>
   </div>
 </template>
 
@@ -107,7 +107,7 @@ export default {
     },
     table() {
       return {
-        id: '',
+        id: 'LndpZm',
         type: 'pivot-table',
         height: '600px',
       }
