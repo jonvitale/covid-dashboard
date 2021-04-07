@@ -9,8 +9,8 @@
     <div class="container mx-auto px-2 lg:px-6 py-4 md:py-6">
       <Header />
       <br />
-      <Navigation id="main-nav" />
-      <br />
+      <!-- <Navigation id="main-nav" />
+      <br /> -->
       <Columns>
         <Column side="left" width="1/3">
           <Square color="dark">
@@ -18,9 +18,9 @@
               <span id="main-title"> COVID-19 DASHBOARD </span>
             </Heading>
             <p class="text-lg">
-              This dashboard displays information about COVID-19 testing,
-              confirmed cases, quarantining, and school closures for School
-              District of Philadelphia students, staff, and schools.
+              This dashboard displays information about COVID-19 testing and
+              confirmed cases for School District of Philadelphia students and
+              staff.
               <br />
               <br />
               Data last refreshed: {{ $store.state.date_current }}
@@ -62,7 +62,7 @@
 <script>
 import SelectionsMixin from '~/mixins/SelectionsMixin'
 import Header from '~sdp-components/Header/Header'
-import Navigation from '~/components/Navigation'
+// import Navigation from '~/components/Navigation'
 import Footer from '~sdp-components/Footer/Footer'
 import Columns from '~sdp-components/PageElements/Columns'
 import Column from '~sdp-components/PageElements/Column'
@@ -75,7 +75,7 @@ import Heading from '~sdp-components/PageElements/Heading'
 export default {
   components: {
     Header,
-    Navigation,
+    // Navigation,
     Footer,
     Columns,
     Column,

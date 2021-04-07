@@ -3,7 +3,7 @@
     <ul
       class="flex flex-wrap md:flex-no-wrap md:w-full justify-between mb-4 text-sm"
     >
-      <NavigationItem id="nav-testing" label="Student Testing" link="/" exact />
+      <NavigationItem id="nav-testing" label="Testing" link="/" exact />
       <NavigationItem
         id="nav-quarantine"
         label="Quarantine"

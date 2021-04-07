@@ -1,21 +1,124 @@
 <template>
   <div class="mx-8">
-    <h1>Summary</h1>
+    <NavigationItem label="Back to data" link="/" exact />
+    <h1>Overview</h1>
     <p>
-      The School District of Philadelphia's COVID-19 dashboard, displays
-      testing, quarantining, and school closure data. All data is displayed
-      since March 8th, 2021, when selected students began to return to schools.
-      Below includes a summary of major metrics displayed in this app.
+      The School District of Philadelphia (SDP) COVID-19 Dashboard displays
+      information on COVID-19 tests and cases for SDP students and staff.
+      <br />
+      <br />
+      This site includes information on tests performed and positive cases in
+      schools as well as tests performed and cases confirmed off-site (for
+      example, at a doctor’s office or community health center). For tests
+      performed and cases confirmed off-site, only those that are reported to
+      SDP are included in the dashboard.
+      <br />
+      <br />
+      For more information on hybrid learning and testing processes, please
+      visit
+
+      <a
+        href="https://www.philasd.org/coronavirus/schoolstart2020/"
+        target="_blank"
+      >
+        Advancing Education Safety </a
+      >.
     </p>
-    <h1>Metrics</h1>
-    <h2>Testing</h2>
+    <ul>
+      <li>Data Refresh: Weekly</li>
+      <li>
+        Data Attribution
+        <ul>
+          <li>
+            Location: Tests and case counts are attributed to the school at
+            which the student was enrolled or the staff member is located.
+          </li>
+          <li>
+            Date: Test and case counts are listed according to the day and week
+            in which results were available, not necessarily when the tests were
+            administered.
+          </li>
+        </ul>
+      </li>
+      <li>School Sectors Included: District K-12 and Alternative</li>
+    </ul>
+    <h1>Key Metrics</h1>
+    <!-- <h2>Testing</h2> -->
     <ul>
       <li>
-        <span class="italic"> # Enrolled Students </span>
+        <span class="metric-name"> # Students - </span> The total number of
+        students, as of {{ $store.state.date_current }}, enrolled at district
+        schools. This value differs from other District enrollment counts (for
+        example, School Profiles or Open Data), which report enrollment as of
+        October 1.
+      </li>
+      <li>
+        <span class="metric-name"> # Staff - </span> The total number of
+        District staff, as of {{ $store.state.date_current }}. Only staff at
+        District schools or District administrative buildings are included.
+      </li>
+      <!-- <li>
+        <span class="metric-name"> # In-Person Students - </span> The total
+        number of students, by day, who are physically present at an SDP school
+        building for at least one day a week. Students that receive instruction
+        digitally only are not included.
+      </li> -->
+      <li>
+        <span class="metric-name"> # Students and Staff Tested - </span> The
+        total number of students and staff, by week and day, who have received a
+        test for COVID-19. This includes both tests conducted at SDP-run testing
+        facilities (such as schools) and self-reported test results. In some
+        cases these results are displayed for the previous 14 days only.
+        Students or staff who are tested twice as part of the process to confirm
+        a positive case have only one test counted towards this measure.
+      </li>
+      <li>
+        <span class="metric-name">
+          # Students and Staff Tested Positive -
+        </span>
+        The total number of students and staff, by week and day, who have
+        received a confirmed positive test result for COVID-19. This includes
+        both tests conducted at SDP-run testing facilities (such as schools) and
+        self-reported test results. In some cases these results are displayed
+        for the previous 14 days only.
+      </li>
+      <li>
+        <span class="metric-name"
+          >Total Positive Community Cases by ZIP Code -
+        </span>
+        The cumulative number of positive COVID-19 cases in the ZIP code
+        according to the City of Philadelphia. This count is not limited to
+        students and staff.
       </li>
     </ul>
+    <p>
+      Data reflects the most complete information as of the refresh date on the
+      dashboard landing page. Data for the most recent week is subject to change
+      as more complete information becomes available.
+    </p>
+    <!-- <h2>School Closures</h2>
+    <ul>
+      <li>
+        <span class="metric-name"> # School Closed - </span> The total number of
+        district schools were closed due to confirmed COVID-19 cases.
+      </li>
+      <li>
+        <span class="metric-name"> Avg Days Closed - </span> The average number
+        of days that district schools were closed due to confirmed COVID-19
+        cases.
+      </li>
+    </ul> -->
   </div>
 </template>
+<script>
+import NavigationItem from '~sdp-components/Navigation/NavigationItem'
+
+export default {
+  components: {
+    NavigationItem,
+  },
+}
+</script>
 <style lang="postcss" scoped>
 h1 {
   font-size: 20pt;
@@ -36,5 +139,11 @@ ul {
 }
 li {
   margin-left: 4rem;
+}
+a {
+  @apply text-blue-600 underline;
+}
+.metric-name {
+  @apply italic font-semibold;
 }
 </style>
