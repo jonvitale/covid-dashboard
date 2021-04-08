@@ -9,7 +9,7 @@
       </Content>
     </Square>
     <Square ref="v-student" name="Student" class="mb-8" color="light" tight>
-      <div class="flex flex-wrap">
+      <div class="flex flex-wrap justify-center">
         <QlikKPI
           ref="kpiTesting"
           class="max-w-sm"
@@ -21,6 +21,18 @@
           primary-size="small"
           secondary-text-color="red"
         />
+        <QlikKPI
+          ref="kpiPctTesting"
+          class="max-w-sm"
+          :has-secondary="false"
+          :q-id="kpiPctTesting.qId"
+          :title="kpiPctTesting.title"
+          :subtitle="kpiPctTesting.subtitle"
+          :description="kpiPctTesting.description"
+          primary-size="small"
+        />
+      </div>
+      <div>
         <QdtComponent
           class="flex-auto m-2 p-2 bg-white"
           type="QdtViz"
@@ -135,6 +147,14 @@ export default {
         secondaryLabel: 'Tested Positive',
       }
     },
+    kpiPctTesting() {
+      return {
+        qId: 'sJLmN',
+        description: '',
+        title: '% Tested Positive ¹',
+        subtitle: ' ',
+      }
+    },
     chartTesting() {
       return {
         id: 'ed329493-b17d-4308-a964-b49ee8343aab',
@@ -200,7 +220,6 @@ export default {
         id: 'dfd11a55-fe20-484b-8374-a4af10aa9fcf',
         type: 'pivot-table',
         height: '600px',
-        noSelections: true,
       }
     },
   },
