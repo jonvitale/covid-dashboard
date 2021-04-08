@@ -23,9 +23,11 @@
               staff.
               <br />
               <br />
-              Data last refreshed: {{ $store.state.date_current }}
+              Data last refreshed: 4/6/2021
             </p>
-            <!-- <button
+            <!-- 
+              {{ $store.state.date_current }} 
+              <button
               id="main-tour-button"
               class="blink text-blue-800 bg-white px-2 py-1 my-1 text-base font-bold uppercase hover:bg-gray-200 focus:outline-none"
               @click="launchTour"
