@@ -47,15 +47,14 @@
     <ul>
       <li>
         <span class="metric-name"> # Students - </span> The total number of
-        students, as of {{ $store.state.date_current }}, enrolled at district
-        schools. This value differs from other District enrollment counts (for
-        example, School Profiles or Open Data), which report enrollment as of
-        October 1.
+        students, as of 4/6/2021, enrolled at district schools. This value
+        differs from other District enrollment counts (for example, School
+        Profiles or Open Data), which report enrollment as of October 1.
       </li>
       <li>
         <span class="metric-name"> # Staff - </span> The total number of
-        District staff, as of {{ $store.state.date_current }}. Only staff at
-        District schools or District administrative buildings are included.
+        District staff, as of 4/6/2021. Only staff at District schools or
+        District administrative buildings are included.
       </li>
       <!-- <li>
         <span class="metric-name"> # In-Person Students - </span> The total
