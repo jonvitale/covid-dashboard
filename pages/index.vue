@@ -50,6 +50,10 @@
         1. Data in this section is district-wide only and will not respond to
         filters or school selections.
       </div>
+      <div class="text-black text-left ml-6">
+        2. For staff, only tests and results from mandatory asymptomatic testing
+        program are included. See "About" page for more details.
+      </div>
     </Square>
     <!-- <Square
       v-if="showPlaceholder"
@@ -142,7 +146,7 @@ export default {
       return {
         qId: '2a05e670-30df-419c-9e31-2688551b80da',
         description: '',
-        title: '# Students and Staff Tested ¹',
+        title: `# Students and Staff Tested ¹ ²`,
         subtitle: ' ',
         secondaryLabel: 'Tested Positive',
       }
@@ -151,7 +155,7 @@ export default {
       return {
         qId: 'sJLmN',
         description: '',
-        title: '% Tested Positive ¹',
+        title: '% Tested Positive ¹ ²',
         subtitle: ' ',
       }
     },

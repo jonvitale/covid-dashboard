@@ -66,10 +66,9 @@
         <span class="metric-name"> # Students and Staff Tested - </span> The
         total number of students and staff, by week and day, who have received a
         test for COVID-19. This includes both tests conducted at SDP-run testing
-        facilities (such as schools) and self-reported test results. In some
-        cases these results are displayed for the previous 14 days only.
-        Students or staff who are tested twice as part of the process to confirm
-        a positive case have only one test counted towards this measure.
+        facilities (such as schools) and self-reported test results. Students or
+        staff who are tested twice as part of the process to confirm a positive
+        case have only one test counted towards this measure.
       </li>
       <li>
         <span class="metric-name">
@@ -78,8 +77,7 @@
         The total number of students and staff, by week and day, who have
         received a confirmed positive test result for COVID-19. This includes
         both tests conducted at SDP-run testing facilities (such as schools) and
-        self-reported test results. In some cases these results are displayed
-        for the previous 14 days only.
+        self-reported test results.
       </li>
       <li>
         <span class="metric-name"
@@ -88,6 +86,37 @@
         The cumulative number of positive COVID-19 cases in the ZIP code
         according to the City of Philadelphia. This count is not limited to
         students and staff.
+      </li>
+    </ul>
+    <h1>Notes about the data on this dashboard</h1>
+    <ul>
+      <li>
+        Both symptomatic and asymptomatic testing is available for students and
+        staff. Asymptomatic students enrolled in hybrid learning are tested for
+        COVID-19 at least once over the course of five weeks. Asymptomatic
+        students with complex needs are tested for COVID-19 once weekly.
+        Students who become symptomatic during the school day are tested by the
+        school nurse. For students, tests and results associated with both
+        symptomatic and asymptomatic testing are included.
+      </li>
+      <li>
+        All staff participate in mandatory asymptomatic testing weekly at their
+        work location. Staff who are showing symptoms of COVID-19 can also
+        undergo voluntary symptomatic testing at specific locations across the
+        city. For staff, this dashboard includes the tests and results for the
+        mandatory asymptomatic testing only.
+      </li>
+      <li>
+        This dashboard includes information about active employees and assigns
+        them to their official location code. Some employees may be assigned to
+        one location (for example, Central Office) but travel to school
+        buildings. These employees' results would still be associated with their
+        official location.
+      </li>
+      <li>
+        Tests and results are associated with specific employees or students,
+        not with the location. As a result, counts of positive cases at a
+        specific location may shift if a student or employee transfers.
       </li>
     </ul>
     <p>

@@ -24,9 +24,11 @@
               <br />
               <br />
               Data last refreshed: 4/6/2021
+              <br />
+              Next data refresh: Week of April 12
             </p>
-            <!-- 
-              {{ $store.state.date_current }} 
+            <!--
+              {{ $store.state.date_current }}
               <button
               id="main-tour-button"
               class="blink text-blue-800 bg-white px-2 py-1 my-1 text-base font-bold uppercase hover:bg-gray-200 focus:outline-none"
