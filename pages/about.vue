@@ -71,6 +71,11 @@
         case have only one test counted towards this measure.
       </li>
       <li>
+        <span class="metric-name"> % Tested Positive - </span> The total number
+        of confirmed positive test results for COVID-19 out of the total number
+        of students and staff who have received a test for COVID-19.
+      </li>
+      <li>
         <span class="metric-name">
           # Students and Staff Tested Positive -
         </span>

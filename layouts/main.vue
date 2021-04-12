@@ -23,9 +23,11 @@
               staff.
               <br />
               <br />
+              Site last updated: 4/12/2021
+              <br />
               Data last refreshed: 4/6/2021
               <br />
-              Next data refresh: Week of April 12
+              Next data refresh: 4/15/2021
             </p>
             <!--
               {{ $store.state.date_current }}

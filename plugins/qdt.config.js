@@ -2,7 +2,7 @@ import QdtComponents from 'qdt-components'
 
 const host = 'dashboards.philasd.org' // window.location.hostname
 
-const isTesting = true
+const isTesting = false
 
 const appId = isTesting
   ? 'b54d292f-7648-4207-9dfe-abdf78a12785'
