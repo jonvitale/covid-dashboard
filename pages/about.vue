@@ -21,7 +21,7 @@
         href="https://www.philasd.org/coronavirus/schoolstart2020/"
         target="_blank"
       >
-        Advancing Education Safety </a
+        Advancing Education Safely </a
       >.
     </p>
     <ul>
@@ -103,8 +103,22 @@
         All staff participate in mandatory asymptomatic testing weekly at their
         work location. Staff who are showing symptoms of COVID-19 can also
         undergo voluntary symptomatic testing at specific locations across the
-        city. For staff, this dashboard includes the tests and results for the
-        mandatory asymptomatic testing only.
+        city. For staff, this dashboard includes the tests for the mandatory
+        asymptomatic testing only in the count of staff tested. Positive results
+        from the asymptomatic testing program, the symptomatic testing program,
+        and tests performed outside of the District’s testing program (but
+        reported to the District) are included in the count of positive cases.
+      </li>
+      <li>
+        The number and percent of students and staff who tested positive may
+        overstate the number of people who had positive COVID-19 tests and
+        encountered a school building. This is because individuals who received
+        positive results from the staff symptomatic testing or from staff and
+        student testing that occurred outside of the District’s testing program
+        may not have been in school buildings - for example, a teacher who
+        tested positive but was working from home because their school had not
+        yet reopened would be included in the number of positive tests but would
+        not have been exposed to students or other staff.
       </li>
       <li>
         This dashboard includes information about active employees and assigns
