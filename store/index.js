@@ -2,7 +2,10 @@ export const state = () => ({
   show_placeholders: true,
   years: [],
   years_all: [],
-  date_current: null,
+  date_refresh: null,
+  date_data_current: null,
+  date_refresh_next: null,
+  date_update: null,
 })
 
 const yearToYearEnd = (year) => parseInt(year.substr(-4))
@@ -67,16 +70,36 @@ export const mutations = {
   set_years_all(state, val) {
     state.years_all = val
   },
-  set_date_current(state, val) {
-    state.date_current = val
+  set_date_refresh(state, val) {
+    state.date_refresh = val
+  },
+  set_date_update(state, val) {
+    state.date_refresh = val
+  },
+  set_date_data_current(state, val) {
+    state.date_data_current = val
+  },
+  set_date_refresh_next(state, val) {
+    state.date_refresh_next = val
   },
 }
 
 export const actions = {
   async initialize({ commit }) {
-    const dateCurrent = await this.$qlik.getVariableValueByName('date_current')
-    console.log('dateCurrent', dateCurrent)
-    commit('set_date_current', dateCurrent)
+    const dateRefresh = await this.$qlik.getVariableValueByName('date_refresh')
+    commit('set_date_refresh', dateRefresh)
+    const dateDataCurrent = await this.$qlik.getVariableValueByName(
+      'date_data_current'
+    )
+    commit('set_date_data_current', dateDataCurrent)
+    const dateRefreshNext = await this.$qlik.getVariableValueByName(
+      'date_refresh_next'
+    )
+    commit('set_date_refresh_next', dateRefreshNext)
+    const date = new Date()
+    const fdate =
+      date.getMonth() + 1 + '/' + date.getDate() + '/' + date.getFullYear()
+    commit('set_date_update', fdate)
   },
   set_years({ commit }, values) {
     const years = values.SchoolYear.map(({ text }) => text)
