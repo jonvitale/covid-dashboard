@@ -59,7 +59,7 @@ export default {
     [
       '@nuxtjs/google-analytics',
       {
-        id: 'G-BH31MCWCKL',
+        id: 'UA-133925908-5',
         debug: {
           enabled: false,
           sendHitTask: true,
