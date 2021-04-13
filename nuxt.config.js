@@ -53,7 +53,20 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['nuxt-webfontloader', 'vue-scrollto/nuxt'],
+  modules: [
+    'nuxt-webfontloader',
+    'vue-scrollto/nuxt',
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'G-BH31MCWCKL',
+        debug: {
+          enabled: false,
+          sendHitTask: true,
+        },
+      },
+    ],
+  ],
   webfontloader: {
     google: {
       families: ['Roboto:wght@700'],
