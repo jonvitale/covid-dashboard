@@ -4,14 +4,14 @@
     <h1>Overview</h1>
     <p>
       The School District of Philadelphia (SDP) COVID-19 Dashboard displays
-      information on COVID-19 tests and cases for SDP students and staff.
+      information on COVID-19 tests and positive cases for SDP students and
+      staff.
       <br />
       <br />
       This site includes information on tests performed and positive cases in
-      schools as well as tests performed and cases confirmed off-site (for
-      example, at a doctor’s office or community health center). For tests
-      performed and cases confirmed off-site, only those that are reported to
-      SDP are included in the dashboard.
+      schools as well as cases confirmed off-site (for example, at a doctor’s
+      office or community health center). For positive cases confirmed off-site,
+      only those that are reported to SDP are included in the dashboard.
       <br />
       <br />
       For more information on hybrid learning and testing processes, please
@@ -25,7 +25,10 @@
       >.
     </p>
     <ul>
-      <li>Data Refresh: Weekly</li>
+      <li>
+        Data Refresh: Weekly for # of students and staff tested; daily for # of
+        students and staff tested positive.
+      </li>
       <li>
         Data Attribution
         <ul>
@@ -47,14 +50,15 @@
     <ul>
       <li>
         <span class="metric-name"> # Students - </span> The total number of
-        students, as of 4/6/2021, enrolled at district schools. This value
-        differs from other District enrollment counts (for example, School
-        Profiles or Open Data), which report enrollment as of October 1.
+        students, as of {{ $store.state.date_data_current }}, enrolled at
+        district schools. This value differs from other District enrollment
+        counts (for example, School Profiles or Open Data), which report
+        enrollment as of October 1.
       </li>
       <li>
         <span class="metric-name"> # Staff - </span> The total number of
-        District staff, as of 4/6/2021. Only staff at District schools or
-        District administrative buildings are included.
+        District staff, as of {{ $store.state.date_data_current }}. Only staff
+        at District schools or District administrative buildings are included.
       </li>
       <!-- <li>
         <span class="metric-name"> # In-Person Students - </span> The total
@@ -65,15 +69,9 @@
       <li>
         <span class="metric-name"> # Students and Staff Tested - </span> The
         total number of students and staff, by week and day, who have received a
-        test for COVID-19. This includes both tests conducted at SDP-run testing
-        facilities (such as schools) and self-reported test results. Students or
+        test for COVID-19. This includes tests conducted at schools. Students or
         staff who are tested twice as part of the process to confirm a positive
         case have only one test counted towards this measure.
-      </li>
-      <li>
-        <span class="metric-name"> % Tested Positive - </span> The total number
-        of confirmed positive test results for COVID-19 out of the total number
-        of students and staff who have received a test for COVID-19.
       </li>
       <li>
         <span class="metric-name">
@@ -83,6 +81,11 @@
         received a confirmed positive test result for COVID-19. This includes
         both tests conducted at SDP-run testing facilities (such as schools) and
         self-reported test results.
+      </li>
+      <li>
+        <span class="metric-name"> % Tested Positive - </span> The total number
+        of confirmed positive test results for COVID-19 out of the total number
+        of students and staff as of {{ $store.state.date_data_current }}.
       </li>
       <li>
         <span class="metric-name"
@@ -101,8 +104,11 @@
         COVID-19 at least once over the course of five weeks. Asymptomatic
         students with complex needs are tested for COVID-19 once weekly.
         Students who become symptomatic during the school day are tested by the
-        school nurse. For students, tests and results associated with both
-        symptomatic and asymptomatic testing are included.
+        school nurse. For students, tests associated with the asymptomatic
+        testing program are included. Positive results from the asymptomatic
+        testing program, symptomatic testing, and tests performed outside of the
+        District’s testing program (but reported to the District) are included
+        in the count of positive cases.
       </li>
       <li>
         All staff participate in mandatory asymptomatic testing weekly at their
@@ -140,8 +146,8 @@
     </ul>
     <p>
       Data reflects the most complete information as of the refresh date on the
-      dashboard landing page. Data for the most recent week is subject to change
-      as more complete information becomes available.
+      dashboard landing page. Data is subject to change as more complete
+      information becomes available.
     </p>
     <!-- <h2>School Closures</h2>
     <ul>

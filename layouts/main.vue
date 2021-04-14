@@ -23,11 +23,14 @@
               staff.
               <br />
               <br />
-              Site last updated: {{ $store.state.date_update }}
+              <!-- Site last updated: {{ $store.state.date_update }}
               <br />
               Data last refreshed: {{ $store.state.date_refresh }}
-              <br />
+              <br /> -->
               Next data refresh: {{ $store.state.date_refresh_next }}
+              <br />
+              Data for previous weeks may change as additional information is
+              available.
             </p>
             <!--
               {{ $store.state.date_current }}

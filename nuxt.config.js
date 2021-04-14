@@ -1,6 +1,6 @@
 import { resolve, join } from 'path'
 
-const isTesting = true
+const isTesting = false
 
 const appName = isTesting ? 'nedfjghese234ksd' : 'covid-dashboard'
 

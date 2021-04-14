@@ -3,9 +3,11 @@
     <Square color="dark">
       <Content size="medium">
         This site displays information about COVID-19 tests and positive cases
-        for both School District of Philadelphia students and staff. Tests and
-        positive cases include both self-reported results and District testing
-        results
+        for both School District of Philadelphia students and staff. The number
+        of students and staff tested is based only on the District's on-site
+        testing program, including testing at regional special education
+        centers. The number of positive cases include both self-reported results
+        and results from the District's testing program.
       </Content>
     </Square>
     <Square ref="v-student" name="Student" class="mb-8" color="light" tight>
@@ -51,9 +53,11 @@
         filters or school selections.
       </div>
       <div class="text-black text-left ml-6">
-        2. These values were updated on April 12, 2021, to include positive
+        2. These values were updated on April 13, 2021, to include positive
         cases resulting from staff symptomatic testing and staff self-reported
-        results.
+        results. The % Tested Positive is the total number of confirmed positive
+        test results for COVID-19 out of the total number of students and staff
+        as of {{ $store.state.date_data_current }}
       </div>
     </Square>
     <!-- <Square
@@ -95,6 +99,16 @@
       <QdtComponent class="w-full" type="QdtViz" :props="map" :load="loadMap" />
     </Square>
     <Square ref="v-table" name="Table" class="w-full mb-4" color="tint" tight>
+      <div class="p-4 text-lg">
+        For the total number of positives by location, including positives
+        associated with employees who travel between locations, please go
+        <a
+          href="https://docs.google.com/spreadsheets/d/1ZcHE7p3sVgKF-CIl774d-qgk2h8TFj-M2qOLpVmexWw/edit?usp=sharing"
+          target="_blank"
+          class="underline"
+          >here
+        </a>
+      </div>
       <QdtComponent
         class="w-full"
         :load="loadTable"

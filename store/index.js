@@ -5,7 +5,7 @@ export const state = () => ({
   date_refresh: null,
   date_data_current: null,
   date_refresh_next: null,
-  date_update: null,
+  date_update: '4/13/2021',
 })
 
 const yearToYearEnd = (year) => parseInt(year.substr(-4))
@@ -74,7 +74,7 @@ export const mutations = {
     state.date_refresh = val
   },
   set_date_update(state, val) {
-    state.date_refresh = val
+    state.date_update = val
   },
   set_date_data_current(state, val) {
     state.date_data_current = val
@@ -96,10 +96,10 @@ export const actions = {
       'date_refresh_next'
     )
     commit('set_date_refresh_next', dateRefreshNext)
-    const date = new Date()
-    const fdate =
-      date.getMonth() + 1 + '/' + date.getDate() + '/' + date.getFullYear()
-    commit('set_date_update', fdate)
+    // const date = new Date()
+    // const fdate =
+    //   date.getMonth() + 1 + '/' + date.getDate() + '/' + date.getFullYear()
+    // commit('set_date_update', fdate)
   },
   set_years({ commit }, values) {
     const years = values.SchoolYear.map(({ text }) => text)
