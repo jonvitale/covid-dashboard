@@ -99,7 +99,7 @@
       <QdtComponent class="w-full" type="QdtViz" :props="map" :load="loadMap" />
     </Square>
     <Square ref="v-table" name="Table" class="w-full mb-4" color="tint" tight>
-      <div class="p-4 text-lg">
+      <!-- <div class="p-4 text-lg">
         For the total number of positives by location, including positives
         associated with employees who travel between locations, please go
         <a
@@ -108,7 +108,7 @@
           class="underline"
           >here
         </a>
-      </div>
+      </div> -->
       <QdtComponent
         class="w-full"
         :load="loadTable"

@@ -22,5 +22,10 @@ export default {
     // Navigation,
     Footer,
   },
+  head() {
+    return {
+      title: 'SDP COVID Dashboard',
+    }
+  },
 }
 </script>

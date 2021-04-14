@@ -57,8 +57,9 @@
       </li>
       <li>
         <span class="metric-name"> # Staff - </span> The total number of
-        District staff, as of {{ $store.state.date_data_current }}. Only staff
-        at District schools or District administrative buildings are included.
+        District staff, as of {{ $store.state.date_data_current }}. This
+        includes certain contractors who work on-site. Only staff at District
+        schools or District administrative buildings are included.
       </li>
       <!-- <li>
         <span class="metric-name"> # In-Person Students - </span> The total
@@ -81,6 +82,16 @@
         received a confirmed positive test result for COVID-19. This includes
         both tests conducted at SDP-run testing facilities (such as schools) and
         self-reported test results.
+      </li>
+      <li>
+        <span class="metric-name">
+          # Positive Cases Associated with Multiple Locations -
+        </span>
+        The total number of students and staff who have received a confirmed
+        positive test result, including employees who travel between location.
+        This does not reflect the number of unique positive cases. This column
+        includes positive results from symptomatic testing, asymptomatic
+        testing, and self-reported tests.
       </li>
       <li>
         <span class="metric-name"> % Tested Positive - </span> The total number
@@ -133,7 +144,8 @@
       </li>
       <li>
         This dashboard includes information about active employees and assigns
-        them to their official location code. Some employees may be assigned to
+        them to their official location code for the "# staff" and "# students
+        and staff tested positive" measures. Some employees may be assigned to
         one location (for example, Central Office) but travel to school
         buildings. These employees' results would still be associated with their
         official location.

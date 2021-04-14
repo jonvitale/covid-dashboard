@@ -113,6 +113,11 @@ export default {
       },
     }
   },
+  head() {
+    return {
+      title: 'SDP COVID Dashboard',
+    }
+  },
   computed: {
     filterFieldValues() {
       return [
