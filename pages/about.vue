@@ -94,9 +94,12 @@
         testing, and self-reported tests.
       </li>
       <li>
-        <span class="metric-name"> % Tested Positive - </span> The total number
-        of confirmed positive test results for COVID-19 out of the total number
-        of students and staff as of {{ $store.state.date_data_current }}.
+        <span class="metric-name">
+          % Students and Staff Tested Positive -
+        </span>
+        The total number of confirmed positive test results for COVID-19 out of
+        the total number of students and staff as of
+        {{ $store.state.date_data_current }}.
       </li>
       <li>
         <span class="metric-name"

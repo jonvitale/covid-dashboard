@@ -22,7 +22,14 @@
           :description="kpiTesting.description"
           primary-size="small"
           secondary-text-color="red"
-        />
+        >
+          <template #title>
+            <div>
+              # Students and Staff <br />Tested
+              <sup> 1, 2 </sup>
+            </div>
+          </template>
+        </QlikKPI>
         <QlikKPI
           ref="kpiPctTesting"
           class="max-w-sm"
@@ -32,7 +39,14 @@
           :subtitle="kpiPctTesting.subtitle"
           :description="kpiPctTesting.description"
           primary-size="small"
-        />
+        >
+          <template #title>
+            <div>
+              % Students and Staff <br />Tested Positive
+              <sup> 1, 2 </sup>
+            </div>
+          </template>
+        </QlikKPI>
       </div>
       <div>
         <QdtComponent
@@ -55,9 +69,9 @@
       <div class="text-black text-left ml-6">
         2. These values were updated on April 13, 2021, to include positive
         cases resulting from staff symptomatic testing and staff self-reported
-        results. The % Tested Positive is the total number of confirmed positive
-        test results for COVID-19 out of the total number of students and staff
-        as of {{ $store.state.date_data_current }}
+        results. The % Students and Staff Tested Positive is the total number of
+        confirmed positive test results for COVID-19 out of the total number of
+        students and staff as of {{ $store.state.date_data_current }}
       </div>
     </Square>
     <!-- <Square
@@ -170,7 +184,7 @@ export default {
       return {
         qId: 'sJLmN',
         description: '',
-        title: '% Tested Positive ¹ ²',
+        title: '% Students and Staff Tested Positive ¹ ²',
         subtitle: ' ',
       }
     },
