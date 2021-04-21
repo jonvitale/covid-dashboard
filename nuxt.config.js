@@ -26,13 +26,13 @@ export default {
         href: `/extensions/${appName}/favicon.ico`,
       },
     ],
-    script: [
-      { hid: 'accessibe', src: '/accessibe.js', body: true },
-      {
-        src:
-          'https://dashboards.philasd.org/resources/assets/external/requirejs/require.js',
-      },
-    ],
+    // script: [
+    //   { hid: 'accessibe', src: '/accessibe.js', body: true },
+    //   {
+    //     src:
+    //       'https://dashboards.philasd.org/resources/assets/external/requirejs/require.js',
+    //   },
+    // ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
