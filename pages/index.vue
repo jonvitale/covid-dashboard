@@ -106,7 +106,7 @@
             :options="mapTypeMap"
             :selected-value="mapType"
             label="View map by"
-            @buttonClicked="handleMapTypeSelection($event.value, $event.label)"
+            @click="handleMapTypeSelection($event.value, $event.label)"
           />
         </div>
       </Square> -->

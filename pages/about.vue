@@ -27,7 +27,8 @@
     <ul>
       <li>
         Data Refresh: Weekly for # of students and staff tested; daily for # of
-        students and staff tested positive.
+        students tested positive; Tuesdays and Fridays for # of staff tested
+        positive. Data is typically refreshed in the afternoon.
       </li>
       <li>
         Data Attribution
